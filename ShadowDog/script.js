@@ -13,22 +13,22 @@ const CANVAS_HEIGHT = (canvas.height = 600);
 
 const playerImage = new Image();
 playerImage.src = "shadow_dog.png";
-const spriteWidth = 575;
+const spriteWidth = 574;
 const spriteHeight = 523;
 
 let frameX = 0;
-let frameY = 1;
+let frameY = 0;
 let gameFrame = 0;
 const staggerFrames = 5;
 const spriteAnimations = [];
 const animationState = [
   {
     name: "idle",
-    frames: 7,
+    frames: 6,
   },
   { name: "jump", frames: 7 },
   { name: "fall", frames: 7 },
-  { name: "run", frames: 9 },
+  { name: "run", frames: 8 },
   {
     name: "dizzy",
     frames: 11,
